@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Segunda aplicación móvil</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema-app2.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+ <!-- Start WOWSlider.com HEAD section-->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+ 
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/recurso.png','imagenes/motorola2.png','imagenes/motorolaR2.png','imagenes/iphone (1).png','imagenes/samsung2.png')">
+
+   <div data-role="page"id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="a">
+     <h1>Telefonía Movíl</h1>
+    </div>
+    <!--<div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>Foto Perfil</h1>
+         <div>
+          <p>Esta es  mi imagen de perfil:</p>
+         <br> 
+      </div>
+      <div>
+        <img src="imagenes/fotoPerfil.png" width="50%" height="50%">
+       </div>
+      </div>
+      </div>-->
+<div>
+       <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+       <li class="ui-first-child ui-last-child"> 
+           <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>¿Qué es un telefono celular?</h2>
+           </a>
+</li>
+        <li class="ui-first-child ui-last-child">
+           <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Historia de la telefonía celular</h2>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2> Clasificacion de la telefonía celular</h2>
+      </a>
+</li>
+      <li class="ui-first-child ui-last-child">
+          <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> Compañias que manejan la telefonía celular en México</h2>
+       </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+          <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Teléfonos del futuro</h2>
+       </a>
+    </li>
+     </lu>
+   </div>
+   <!-- Start WOWSlider.com BODY section-->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/gama alta.png" alt="gama alta" title="gama alta" id="wows1_0"/></li>
+		<li><img src="data1/images/gama baja.png" alt="gama baja" title="gama baja" id="wows1_1"/></li>
+		<li><img src="data1/images/gama media.png" alt="gama media" title="gama media" id="wows1_2"/></li>
+		<li><img src="data1/images/celular movil.png" alt="celular movil" title="celular movil" id="wows1_3"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/nokia.png" alt="http://wowslider.net/" title="nokia" id="wows1_4"/></a></li>
+		<li><img src="data1/images/motorola.png" alt="recurso1" title="motorola" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="alta"><span><img src="data1/tooltips/gama alta.png" alt="gama alta"/>1</span></a>
+		<a href="#" title="baja"><span><img src="data1/tooltips/gama baja.png" alt="gama baja"/>2</span></a>
+		<a href="#" title="media"><span><img src="data1/tooltips/gama media.png" alt="gama media"/>3</span></a>
+		<a href="#" title="movil"><span><img src="data1/tooltips/celular movil.png" alt="movil"/>4</span></a>
+		<a href="#" title="nokia"><span><img src="data1/tooltips/nokia.png" alt="nokia"/>5</span></a>
+		<a href="#" title="recurso1"><span><img src="data1/tooltips/motorola.png" alt="motorola"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/recurso2.png" width="46" height="46">
+      </div>
+      <div>
+         <h4>Aplicación Dos</h4>
+         <h4>Jonathan Melchor Aguilar</h4>
+     </div>
+</div>
+      </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+        <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>¿Qué es un teléfono celular?</h1>  
+       </div>
+       <div data-role="content" aling="center"> 
+        <div>
+          <h2>¿Qué es un teléfono celular?
+Un teléfono móvil o celular es un teléfono portátil que puede hacer y recibir llamadas a través de una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico</h2>
+          <p><center><img src="imagenes/celular.png" width="250" height="190" alt="Celular"></center></p>
+        </div>
+        </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Aplicación dos,JMA</h4>
+      </div>
+      </div>
+     
+
+<div data-role="page"id="Pagina2" data-add-back-btn="true" data-theme="a">
+        <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+         <h1>Historia del teléfono celular</h1>  
+       </div>
+       <div data-role="content" aling="center"> 
+        <div>
+          <table width="35%" border="1">
+            <tr>
+              <td width="95">NOMBRE</td>
+              <td width="36">AÑO</td>
+              <td width="155">INFORMACION</td>
+              <td>IMAGEN</td>
+            </tr>
+            <tr>
+              <td><div align="center">MOTOROLA DYNATAC 8000X</div></td>
+              <td><div align="center">1983</div></td>
+              <td><p>En el  año de 1973 Motorola presentó el prototipo del primer teléfono portátil en el  mundo, este equipo fue lanzado al mercado en el año de 1983 por un modico costo  de 4.000 dólares. Una de las principales características de este súper celular,  era que podia almacenar hasta 30 número telefónicos en su agenda, adicional a  que la batería tenía duración de 1 hora.&nbsp;Este equipo funcionaba bastante  bien para la época, hacia y recibía llamadas de forma natural, eso si, desde  que la persona que quisiera hablar pudiera levantarlo.</p></td>
+              <td><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Celulares','','imagenes/recurso.png',1)"><img src="imagenes/recurso1.png" name="Celulares" width="58" height="58" id="Celulares"></a></td>
+            </tr>
+            <tr>
+              <td>MOTOROLA  STARTAC&nbsp;</td>
+              <td>1996</td>
+              <td><p>Lanzado  en 1996, es prácticamente el primer teléfono que le dio una mayor importancia  al diseño, anteriormente siempre se realizaban diseños pensando 100% en la  funcionalidad del equipo, sin embargo, Motorola fue el primero que vio la  importancia de no dejar a un lado el estilo. Para la fecha este celular era el  más pequeño y ligero del mercado.</p></td>
+              <td width="92" height="50"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Motorola','','imagenes/motorola2.png',1)"><img src="imagenes/motorola1.png" name="Motorola" width="96" height="72" id="Motorola"></a></td>
+            </tr>
+            <tr>
+              <td>MOTOROLA RAZR V3 </td>
+              <td>2004</td>
+              <td>El V3, posiblemente no  tienes que ser tan viejo para recordar este equipo, Motorola marcó una linea en  el diseño de su producto que llamó la atención de todo el mundo. Era de unas  proporciones realmente impresionantes, demasiado delgado y con apariencia metálica  lisa. Su popularidad duró largo tiempo, hasta el 2007 seguía siendo uno de los  teléfonos más populares del mercado.</td>
+              <td><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Motorola Razr','','imagenes/motorolaR2.png',1)"><img src="imagenes/motorolaR.png" width="95" height="59" id="Motorola Razr"></a></td>
+            </tr>
+            <tr>
+              <td> IPHONE</td>
+              <td>2007</td>
+              <td>Apple presentó al mundo lo que llamaron la  Reinvención del teléfono. Con un diseño innovador, una sola tecla y pantalla  táctil, cámara fotográfica de 2 megapíxeles, la habilidad de sincronizar iTunes  con el teléfono y características que lo hacían el deseado por todos.</td>
+              <td><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('iphone','','imagenes/iphone (1).png',1)"><img src="imagenes/iphone.png" name="iphone" width="60" height="68" id="iphone"></a></td>
+            </tr>
+            <tr>
+              <td>SAMSUNG  GALAXY SII</td>
+              <td>2011</td>
+              <td><p>Que dómino las aplicaciones junto a un potente hardware y un  aspecto elegante. En la imagen tenemos al Samsung Galaxy SII, que tiene casi  todas las cosas que un teléfono móvil y su propietario necesitan en esta edad  moderna. Tiene una cámara de 8 mega pixeles y pantalla AMOLED, se ejecuta en el  sistema operativo Android, tiene menos de 1cm de espesor y cuenta con GPS. Este  fue el celular del 2011.</p></td>
+              <td><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Samsung','','imagenes/samsung2.png',1)"><img src="imagenes/samsung1.png" name="Samsung" width="54" height="48" id="Samsung"></a></td>
+            </tr>
+          </table>
+          <h2></h2>
+        </div>
+        </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Aplicación dos,JMA</h4>
+      </div>
+      </div>
+     
+ 
+<div data-role="page"id="Pagina3" data-add-back-btn="true" data-theme="a">
+        <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <H1>Clasificacion de la telefonía celular</h1>
+        </div>
+       <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>Gama Baja ó Basica</h1>
+         <div>
+          <p>Gama baja ó Gama basica</p>
+         <br> 
+      </div>
+      <div>
+       Lo más común es que estos smartphones cuenten con un procesador MediaTek de cuatro núcleos, o con un procesador Snapdragon de doble núcleo. esto sería en realidad la gama básica. Pero lo cierto es que es todavía más fácil reconocerlos por la resolución de la pantalla, pues la mayoría de estos smartphones no llegan a contar con una pantalla de alta definición 720p, sino que suelen quedarse con una pantalla qHD. El tamaño de la pantalla también puede ser determinante, pues raro será ver un teléfono inteligente con pantalla de cinco pulgadas que sea de gama básica, aunque también los hay. En el mejor de los casos, contará con una memoria RAM de 1 GB, por lo que las características que nos permiten identificar un smartphone de gama media son las siguientes:
+
+Procesador MediaTek de 4 núcleos o Qualcomm de doble núcleo
+Memoria RAM de 1 GB como máximo, comúnmente 512 MB
+Resolución de pantalla qHD, inferior a los 1.280 x 720 píxeles.
+Memoria interna inferior a los 8 GB.
+Un ejemplo de gama básica es el Motorola Moto E.
+        <p><img src="imagenes/motoe.png" width="15%" height="15%"></p>
+       </div>
+      </div>
+      </div>
+        <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>Gama Media</h1>
+         <div>
+          <p>Gama Media</p>
+         <br> 
+      </div>
+      <div>
+     La gama media es la que está en mejor situación en el mercado actualmente. Esto se debe a que los teléfonos de gama media actuales funcionan muy bien, y por ello están casi al nivel de los de gama alta, aunque sin alcanzar la excelencia de esto. Lo mejor de todo es que su precio es notablemente inferior, y por eso suelen ser los que ahora mismo cuentan con mejor relación calidad/precio del mercado. Su procesador ya es de un nivel notable, y la memoria RAM siempre será de 1 GB como mínimo. Además, la memoria interna será de 8 GB como mínimo, aunque lo recomendable es que alcance los 16 GB. Las características que identifican a un gama media son las siguientes:
+
+Procesador Qualcomm de 4 núcleos, o MediaTek de 8 núcleos.
+Memoria RAM de 1 GB como mínimo. Algunos podrían llegar a los 2 GB ahora mismo.
+Resolución de pantalla HD siempre. Ni inferior ni superior.
+Memoria interna de 8 GB como mínimo.
+Un ejemplo de gama media claro es el Motorola Moto G.
+        <p><img src="imagenes/motog.png" width="50%" height="50%"></p>
+       </div>
+      </div>
+      </div>
+        <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>Gama Alta</h1>
+         <div>
+          <p>Gama Alta</p>
+         <br> 
+      </div>
+      <div>
+      Con el mercado actual de smartphone, hay cuatro gamas, y la gama alta de ahora son los buques insignia del año pasado. Hay una característica que identifica claramente a un gama alta, y suele ser la pantalla Full HD, con una resolución de 1.920 x 1.080 píxeles. Raro sería un smartphone de gama alta que no contara con esa resolución. El procesador siempre será de 4 núcleos, aunque normalmente de la generación del año pasado, quizás un Snapdragon 800 actualmente, aunque hay otros también. La cámara de estos smartphones siempre supera los 8 megapíxeles. Y su rango de precio siempre supera los 400 euros, pero no suele pasar de los 500 euros. Ya comienzan a tener un diseño más cuidado, siendo fabricados en metal, cristal, o una combinación de ambos. Además, hay algo que los caracteriza claramente, su memoria RAM siempre será de 2 GB, nunca inferior.
+
+Procesador de gran rendimiento
+Pantalla Full HD siempre
+Memoria de 2 GB siempre
+Cámara superior a los 8 megapíxeles
+Un ejemplo de gama alta es el Huawei Ascend P7, y el LG G2
+        <p><img src="imagenes/huawei.png" width="25%" height="25%"></p>
+       </div>
+      </div>
+      </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Aplicación dos,JMA</h4>
+      </div>
+       </div>
+       
+      
+      </div>
+         
+        
+<div data-role="page" id="Pagina4"  data-add-back-btn="true" data-theme="a">
+         <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+          <h1>Compañias que manejan la telefonía celular en México</H1>
+         </div>
+           <div data-role="content" aling="center">
+             <div>
+              <h2>
+              <ul>
+              <li>Telcel es una marca propiedad de la empresa mexicana Radiomóvil DIPSA, S.A. de C.V.. Tiene presencia en todo México y se dedica a ofrecer servicios de telefonía móvil, telefonía fija, servicios de banda ancha, entre otros servicios. Es subsidiaria de la empresa mexicana América Móvil              
+              </ul>
+              <p><a href="http://www.telcel.com/" target="_self">http://www.telcel.com/</a></p>
+              <ul><li>
+                  <p><img src="imagenes/telcel.png" width="50%" height="50%"></p>
+                <li>Movistar México (legalmente Pegaso PCS, S.A. de C.V.), es una empresa proveedora de servicios de telefonía móvil en México, subsidiaria del Grupo Telefónica y su División Telefónica Móviles.                
+                </ul>
+              <p><a href="https://www.movistar.com/es/" target="_self">https://www.movistar.com</a></p>
+              <ul>
+                <li>
+                  <p><img src="imagenes/movistar.png" width="50%" height="50%"></p>
+                <li>AT&T (American Telephone and Telegraph) es una compañía estadounidense de telecomunicaciones.2 Provee servicios de voz, video, datos e Internet a negocios, clientes y agencias del gobierno.
+                    
+                Durante su larga historia ha sido, en ocasiones, la compañía telefónica más grande del mundo y el operador de televisión por cable más grande de los Estados Unidos, llegando a ser clasificada como un monopolio. En 2005 se fusionó con su competidora SBC Communications.                
+                </ul>
+              <p><a href="https://www.att.com.mx/" target="_self">https://www.att.com.mx/</a></p>
+              <ul>
+                <li>
+                  <p><img src="imagenes/at&t.png" width="50%" height="50%"></p>
+                </ul>
+              </h2>
+            </div>
+       </div>
+          <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Aplicación dos,JMA</h4>
+         </div>
+</div>
+         
+        
+         <div data-role="page" id="Pagina5"  data-add-back-btn="true" data-theme="a">
+           <div  data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+           <h1>Teléfonos del futuro</h1>
+        </div>
+          <div data-role="content" aling="center">
+            <div>
+              <table width="31%" border="1">
+                <tr>
+                  <td>IMAGEN</td>
+                  <td>INFORMACIÓN</td>
+                </tr>
+                <tr>
+                  <td><img src="imagenes/nokia.png" width="66" height="49" alt="nOKIA"></td>
+                  <td><strong>Es el primer móvil flexible</strong> creado por el turco Tamer Nakisci, flamante ganador de los Premios de Diseño de los Países Bajos.<br>
+                     <br>
+                    Está diseñado para otorgar la máxima libertad y diversión, ya que <strong>puede cambiar de forma según las necesidades del usuario</strong>, gracias a su batería líquida. Puedes llevarlo como pulsera, enrollado en el bolsillo o como prefieras. Cuando recibe una llamada adopta la forma de los teléfonos tradicionales.<br>
+                     <br>
+                  Este prototipo permitiría enviar formas del teléfono a otros usuarios, por ejemplo si quieres mandarle un corazón a tu novia, sólo haz que tu teléfono se convierta en un corazón. De momento no saldrá al mercado.</td>
+                </tr>
+                <tr>
+                  <td><img src="imagenes/Kambala.png" width="56" height="80" alt="kAMBALA"></td>
+                  <td>El Kambala es un teléfono móvil que transforma a un auricular también. Pop la pieza central y los pings clip del auricular a cabo; este clip en la oreja y tienes un teléfono-auricular! Varias capas de polímeros que alberga todos los componentes electrónicos se utiliza en su construcción. Una flexibilidad continua en la pantalla con un montón de maquillaje para los sensores de la superficie y tiene la capacidad de transmitir la imagen en el interior del teléfono hacia el exterior</td>
+                </tr>
+              </table>
+              <h2></h2>
+         </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <h4>Aplicación dos,JMA</h4>
+         </div>
+        </div>
+       
+         
+         
+</body>
+</html>
+
